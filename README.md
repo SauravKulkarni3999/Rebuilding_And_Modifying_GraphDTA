@@ -1,0 +1,2 @@
+# Rebuilding_And_Modifying_GraphDTA
+This project extends the original GraphDTA model by integrating AlphaFold-predicted 3D protein structures into a graph-based deep learning pipeline for drug–target binding affinity prediction. Drugs are modeled as molecular graphs, while proteins are represented as residue-level 3D graphs derived from AlphaFold .pdb files. The project also incorporates ChEMBL-based candidate filtering to simulate real-world drug screening applications.
