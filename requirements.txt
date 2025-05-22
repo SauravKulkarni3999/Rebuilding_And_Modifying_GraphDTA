@@ -1,0 +1,41 @@
+# Core PyTorch and CUDA
+# (Matches the versions installed in your notebooks for PyTorch 2.0.1 with CUDA 11.8)
+torch==2.0.1+cu118
+torchvision==0.15.2+cu118
+torchaudio==2.0.2+cu118
+
+# PyTorch Geometric and its dependencies
+# These should be compatible with the PyTorch version above.
+# The -f URL is not part of requirements.txt; pip will find compatible versions
+# or you can specify exact pyg versions if known from a clean environment.
+# From your notebooks, these specific versions were installed against torch-2.0.1+cu118:
+torch-scatter @ https://data.pyg.org/whl/torch-2.0.1%2Bcu118/torch_scatter-2.1.2%2Bpt20cu118-cp311-cp311-linux_x86_64.whl
+torch-sparse @ https://data.pyg.org/whl/torch-2.0.1%2Bcu118/torch_sparse-0.6.18%2Bpt20cu118-cp311-cp311-linux_x86_64.whl
+torch-cluster @ https://data.pyg.org/whl/torch-2.0.1%2Bcu118/torch_cluster-1.6.3%2Bpt20cu118-cp311-cp311-linux_x86_64.whl
+torch-spline-conv @ https://data.pyg.org/whl/torch-2.0.1%2Bcu118/torch_spline_conv-1.2.2%2Bpt20cu118-cp311-cp311-linux_x86_64.whl
+torch-geometric==2.6.1
+
+# Cheminformatics and Bioinformatics
+rdkit-pypi>=2022.9.5 # RDKit, version from notebook
+biopython>=1.80 # For PDB parsing and sequence manipulation
+
+# Data Handling and Utility
+pandas>=1.3 # For CSV file handling
+numpy>=1.24.4,<2.0 # Pinning numpy to avoid issues with PyTorch 2.0.1 and older compiled extensions, while trying to satisfy other packages.
+# Note: One notebook had numpy==1.24.4, another had errors with numpy 2.x.
+# PyTorch 2.0.1 itself is often fine with numpy 1.26.x. Test this carefully.
+scikit-learn # For potential utilities, though not heavily used in core training loops shown
+tqdm # For progress bars
+requests # For downloading PDB files
+matplotlib # For plotting (optional, but used in notebooks for visualization)
+
+# For serving/demo (optional, based on "Next Steps")
+# streamlit
+
+# Note:
+# The PyTorch Geometric direct URL dependencies might be better handled by
+# finding their corresponding PyPI versions or ensuring pip can resolve them
+# correctly with the specified torch version.
+# If direct URL installs are problematic, you might need to install PyTorch first,
+# then PyG, letting pip resolve PyG dependencies against the installed PyTorch.
+# For maximum reproducibility, consider an environment.yml for conda if that was your primary environment.

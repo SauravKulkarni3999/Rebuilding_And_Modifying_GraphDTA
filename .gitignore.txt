@@ -1,0 +1,97 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*. तुरुబాस # This was in an output, seems like a typo or temp file, good to ignore
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+requirements.txt.bak # If you create backups
+
+# IDE and editor specific files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+nbproject/ # NetBeans
+*.swp
+*~
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Operating System files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Build and distribution
+build/
+dist/
+eggs/
+*.egg-info/
+*.egg
+
+# Log files and temporary files
+*.log
+*.tmp
+*.temp
+local_settings.py
+
+# Data files - uncomment if your raw datasets are very large and not tracked with Git LFS
+# Provide download instructions/scripts instead in README.
+# data/davis/*.csv
+# data/davis/*.fasta
+# data/kiba/*.csv
+# data/kiba/*.fasta
+# data/external/uniprot_sprot.fasta
+
+# Downloaded PDB files - these can be numerous and large.
+# Consider .gitignore if not using LFS or if they can be easily re-downloaded.
+# data/davis/pdb_files/
+# data/kiba/pdb_files/
+
+# Processed data - often generated from raw data, can be gitignored.
+# data/processed/davis/*.pt
+# data/processed/davis/*.csv
+# data/processed/kiba/*.pt
+# data/processed/kiba/*.csv
+
+# Model Weights - These are crucial but can be large.
+# USE GIT LFS for these files if they are >100MB.
+# If not using Git LFS, uncomment the line below to prevent accidental commits of large files.
+# weights/*.pt
+# weights/*_model.pt
+
+# Results - JSON logs are small and good to track. Large plots or extensive raw output might be ignored.
+# results/*.png
+# results/large_outputs/
+
+# Conda environment file (if you generate it but don't want to track changes frequently)
+# environment.yml.bak
+
+# Coverage reports
+.coverage
+.coverage.*
+htmlcov/
+*.cover
+
+# Python test artifacts
+.pytest_cache/
+.tox/
+nosetests.xml
+coverage.xml
+
+# Triton build files (if any remain locally)
+.triton/

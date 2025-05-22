@@ -1,0 +1,10 @@
+{
+    "Dataset": "KIBA",
+    "Epoch": 494,
+    "Loss (on val)": 0.0919,
+    "Val RMSE": 0.4147,
+    "Val CI": 0.8652,
+    "Loss (on test)": 0.1753,
+    "Test RMSE": 0.4187,
+    "Test CI": 0.8585
+}

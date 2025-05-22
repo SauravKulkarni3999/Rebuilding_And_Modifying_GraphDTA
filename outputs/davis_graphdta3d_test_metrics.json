@@ -1,0 +1,10 @@
+{
+    "Dataset": "Davis",
+    "Epoch": 498,
+    "Loss (on val)": 0.1974,
+    "Val RMSE": 0.5109,
+    "Val CI": 0.8874,
+    "Loss (on test)": 0.299,
+    "Test RMSE": 0.5468,
+    "Test CI": 0.881
+}
